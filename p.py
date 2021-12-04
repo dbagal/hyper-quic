@@ -20,5 +20,10 @@ class P(Process):
         print(f"\nMessage: {msg} sent by {sender_addr}")
 
 
-ip="p1@localhost:8000:8001"
-p = P(ip)
+own_ip = "172.24.19.162"
+other_ip = "172.24.22.2"
+p1ip = f"p1@{own_ip}:8000:8001"
+p2ip = f"p2@{other_ip}:8000:8001"
+peers = {p1ip, p2ip}
+
+p = P(p1ip, peers)
