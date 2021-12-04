@@ -6,7 +6,6 @@ from raw_socket import RawSocket
 
 print("starting...")
 ip = '172.24.19.162'
-port = 8000
 sock = RawSocket(host=ip)
 
 for i in range(2):
