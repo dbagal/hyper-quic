@@ -5,7 +5,9 @@ from scapy.layers.inet import IP
 from raw_socket import RawSocket
 
 print("starting...")
-sock = RawSocket()
+ip = '172.24.19.162'
+port = 8000
+sock = RawSocket(host=ip)
 
 for i in range(2):
     print("listening")
