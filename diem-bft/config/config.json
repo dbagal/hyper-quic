@@ -1,0 +1,147 @@
+{
+    "system":{
+        "num_byzantine": 1,
+        "num_validators": 4,
+        "window_size": 5,
+        "exclude_size": 5,
+        "round_leader_history": 100,
+        "mempool_cache_size": 100,
+        "transmission_time_delta": 0.5,
+        "committed_block_history": 20,
+        "sync_up_wait_before_retransmit": 2,
+
+        "ledger_paths": {
+            "r1@localhost:8000:8001": "r1-ledger.txt",
+            "r2@localhost:8002:8003":"r2-ledger.txt",
+            "r3@localhost:8004:8005":"r3-ledger.txt",
+            "r4@localhost:8006:8007":"r4-ledger.txt",
+            "r5@localhost:8008:8009":"r5-ledger.txt",
+            "r6@localhost:8010:8011":"r6-ledger.txt",
+            "r7@localhost:8012:8013":"r7-ledger.txt",
+            "r8@localhost:8014:8015":"r8-ledger.txt",
+            "r9@localhost:8016:8017":"r9-ledger.txt",
+            "r10@localhost:8018:8019":"r10-ledger.txt"
+        },
+
+        "replica_id_set": [
+            "r1@localhost:8000:8001",
+            "r2@localhost:8002:8003",
+            "r3@localhost:8004:8005",
+            "r4@localhost:8006:8007",
+            "r5@localhost:8008:8009",
+            "r6@localhost:8010:8011",
+            "r7@localhost:8012:8013",
+            "r8@localhost:8014:8015",
+            "r9@localhost:8016:8017",
+            "r10@localhost:8018:8019"
+        ],
+        
+        "replica_keys": {
+            "r1@localhost:8000:8001": [
+                "ZTg4M2NmNDJhMjY0YzljZjc1OTgwZTYxY2VkOTRmNWNiOWY1NTRlNjZiZDYzZTIwMGM4ZWY3Y2Q1NTJiNmJjNg==",
+                "tJZQ946/s/zq7hX3q4uUfcKn3bk5lDI5edGKiH2fp2Y="
+            ],
+            "r2@localhost:8002:8003": [
+                "ZmRmYzA3ZTAyZWU0ZmQyNzEyMTY2ZWNkY2Q5ODhhZmEyZGFhZmRlNGM2NTEyZjQxM2IyMWI0MzgxOGQzYWFmYg==",
+                "BmDXooNh8AUaFQhkWG8NAmQiVomBHiVZqAs6e/uWn1Q="
+            ],
+            "r3@localhost:8004:8005": [
+                "NWQ0YmM0MTA4NzA3NWE1NTQ1MjgwYWZkZmRhYzMzYjdmMjljNGRiMGEyMDJjZWE5MDQ3ZmNlOGNhNGFmNzQ0YQ==",
+                "6pWLs87VGHuqWNPWatXxTGhDcQ0gwtIpHXh0bmb1eeY="
+            ],
+            "r4@localhost:8006:8007": [
+                "OTFkMGU2ODY0YzAxYTRhMDRiNzM0NGE2NjRjZDQ4NTIyZjVhYjNjY2Y1YzQ0NzdhMDljZTRhOWY1OGE2Yzg0Nw==",
+                "RyPO2b93JAG3RHiw27/WL8xFP5DcME5CVzAsJ1S2EvY="
+            ],
+            "r5@localhost:8008:8009": [
+                "MmMyMzg2MWI5ODQ1Zjc1Mjc3ZTRlMGQ2NTQ0MDA0YmE4YTg5MjAzMzBmOTZhN2VlZDVjMDljYjg4NjA2NmNiNA==",
+                "/bpp18lau9xEWmkbMq3W2qXmMt63MsNvVab3k9K16cE="
+            ],
+            "r6@localhost:8010:8011": [
+                "M2I3ZDU5NWVlOTdjOTIyYWQ4NjIxZjI1Zjk3NGE2Y2ZmYTNhMzcxZDIwZTc2MTI3YjU5MjliZjY5YzU4NDVjOQ==",
+                "7pNuD9VH/hgWKjYVJYvJPH4BU2U0kk8Th6WVqFa31HI="
+            ],
+            "r7@localhost:8012:8013": [
+                "OWI4MWI0NDA4MmM0NTZmMjFhYjhlZmJkNWEyNWJiMDkxZjQ0ZmU4OTI5ZTA0NjI2ZjAyZWIxNTY0OTEwZjM4OA==",
+                "a/5wncsz0OSGCm0O72BRKrT+bybYikV4v0eMeOaPt9I="
+            ],
+            "r8@localhost:8014:8015": [
+                "YWM5YWNkODg1YjNlNDA4NGFhNTJkOTk3YjVlMDc3YjQxNjJkYjBkYjU0NmI1OTc5OTU3YzM2MmY3Y2MxNWZlNA==",
+                "SdI3fufRFX5FeUWGKtrSrmCc4bdTC+asO4W0llR7TtY="
+            ],
+            "r9@localhost:8016:8017": [
+                "MmUyMGExZGI3M2E4NTU5MGRkOWU1MTNkMTY2NDkzNGViZjUwODYwZTQyMTZiNDExZTA3MjFlMTI4NzU0MmQ5ZQ==",
+                "lFYegV8mUz2CNjgPdZ/OPmpJjXzQYWVEgdAAliN5mkQ="
+            ],
+            "r10@localhost:8018:8019": [
+                "YzNiMTgzZWJiYjAwYTNlNTY4NzAxOTI5MjExOTEzYmQ1OTA4NjBkNTRlMWE0OTIzYjkxOGE5ZWZlOGIxZjI1Nw==",
+                "L8UZYGqaB6X9P4bGF0RsvKATvfdvo0p415WFionmW6k="
+            ]
+        }
+    },
+
+    "client":{
+        "num_clients": 2,
+        "client_command_length": 10,
+        "num_commands_to_be_sent": 2,
+        "client_wait_before_retransmit": 10,
+        "num_retransmissions": 3,
+        "send_concurrent_requests":"false",
+
+        "client_id_set" :[
+            "c1@localhost:8020:8021",
+            "c2@localhost:8022:8023",
+            "c3@localhost:8024:8025",
+            "c4@localhost:8026:8027",
+            "c5@localhost:8028:8029",
+            "c6@localhost:8030:8031",
+            "c7@localhost:8032:8033",
+            "c8@localhost:8034:8035",
+            "c9@localhost:8036:8037",
+            "c10@localhost:8038:8039"
+        ],
+
+        "client_keys" : {
+            "c1@localhost:8020:8021":[
+                "MTU1ODg2ZDk1YWI4NjdkZDlkMWM3OWQwMzMxZjY4NjRkOTkxOGYyZjcxZDEwNmU4OWJiMmNiMTgzZDdmNDdhOA==",
+                "R6afGukQBvjSLCno8airbr/HshPgOgGMHACaVyZI0uQ="
+            ],
+            "c2@localhost:8022:8023":[
+                "MmE1MTlkNTMxNTFhMjliNmJkODM5YTcyNDdmMGQxOWE2ZTRlNGIzYTFmODAzN2QxM2Q1OTk3ZjFjNWQ5ZThhMw==",
+                "4jy/6tUn0DjO8XRKYSAypFdkq4/xwgbk4ibZ/46Mlvc="
+            ],
+            "c3@localhost:8024:8025":[
+                "YjM4ZjMyZTRkNmM4YzBlOWZmZWM2ZDJmOWRiOGVjZDhhMWY0YjUyMGE3NGMwZmVmMWQyOTJlOTFhOTNjNDVhOA==",
+                "gJ2qpylY8G9eov4as0bwvaBENAA1mmUgoLB/Sa/95vI="
+            ],
+            "c4@localhost:8026:8027":[
+                "M2I3OWE2MWZiYWNjYTc2NGM0NDQyMGExMzExMTM5MjNjYjdkOTUwMzIyMmM1ZTYwZjQ5MzE1NGY5ODEzODJhNw==",
+                "NBbMrghbOsPXa8eNp8A+QKJPNI6EGy+woGYWx2XnJf4="
+            ],        
+            "c5@localhost:8028:8029":[
+                "ZWQ4YmZhODFiN2I5ZGIwMzNjZTg5MTI1ODg4YjM3NDIwMmQ2OWZiYjZkZjJjNGQ3OTlkMTkwMjBjNmMyNGZlMg==",
+                "WsA7R/tCynx6VEoyBArMfJbPzshKiik3g+KxSGtuWdU="
+            ],
+            "c6@localhost:8030:8031":[
+                "OTFlZWY5ZjgwM2YzMWEwZDkwMzg0MjY0NTY5ZmY0Y2NlZDczYTIwODUxNDQwYzE3OGFkM2EyMzY3M2NhN2FlOA==",
+                "Oig5n7cRid7yQuD/i4xZLHNa8SnbRneBOaYnn6LmDwI="
+            ],
+            "c7@localhost:8032:8033":[
+                "ODgyNjA2ODZiYjJlOWM5M2E1YTE1ZTVmODFlOGU0NjUxOGY3MTBkZDhjNjc5MGU5MWNhN2I5NTc2NmE3NmRkYQ==",
+                "5cOhz0xEM4CEqIPKP6Vsd2J/OfO8sqGQ3sYOPgpmu58="
+            ],
+            "c8@localhost:8034:8035":[
+                "OWIzZTIyOTRiOTVjODc3MzlkNTJkOTNkZDY3Y2FjNWM3NDZiYzFhNzg0M2IwMDVjNzNkY2YyNzUzMzFjNDBiNw==",
+                "htjaQ+0Gi6i2WS+CUGbkzwj/ZAiO1i+z9gzYy4rdM7w="
+            ],
+            "c9@localhost:8036:8037":[
+                "NmI4ZjM4OWZhNDRmZmIxYTgyZDEwNWZhNTk5MTkwYjlhM2VlMWE5ZWEzYzEzOTgwYmVhMWExOWJlMDUxZDJiYw==",
+                "N5JomIfnW8MABQ7Fu+hDFsVVuQ4ie9iZxp0sPhUXrd0="
+            ],
+            "c10@localhost:8038:8039":[
+                "MDk4YmI1ZmU4OGUxZTFjNjgyYzIwMTY3NzVmNDI4OTc4Y2UzYWZmMWE4MDFmYjAyYzRkYTM2OGNkNGMwMmM0Zg==",
+                "ybKWDuNPrvdWD0lJsdRcsK1C5LiyQgx1hHRu2x0bOEA=" 
+            ]
+        }
+    }
+}

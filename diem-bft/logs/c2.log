@@ -1,0 +1,41 @@
+2021-12-05 23:17:27,142 : 12-05-2021::23:17:27.141985
+Client up (
+	client-id: c2@localhost:8022:8023
+)
+
+2021-12-05 23:17:27,146 : 12-05-2021::23:17:27.146081
+CLIENT-REQUEST created (
+	--------------------
+	 id: 9f7920b87fd59257e2d625a39db86d63fbf3bafd
+	 sender: c2@localhost:8022:8023
+	 timestamp: 12-05-2021::23:17:27.145289
+	 command: 4T7R6COO3S
+	--------------------
+)
+
+2021-12-05 23:17:27,264 : 12-05-2021::23:17:27.264572
+CLIENT-REQUEST created (
+	--------------------
+	 id: 6617c5b5a5a512b01a6dcdb16a2329b79bd54db2
+	 sender: c2@localhost:8022:8023
+	 timestamp: 12-05-2021::23:17:27.222055
+	 command: Y5R4T7YJGH
+	--------------------
+)
+
+2021-12-05 23:17:27,925 : 12-05-2021::23:17:27.925150
+f+1 identical responses received, result deduced                             (
+	request-id: 9f7920b87fd59257e2d625a39db86d63fbf3bafd, 
+	txn:(c2@localhost:8022:8023,12-05-2021::23:17:27.145289): 4T7R6COO3S                             
+	result: 2913ad0f3fc2aa6889eb28051652b0e68356f0e93e0b17b138bbc8d2717766e7, 
+	timestamp: 12-05-2021::23:17:27.925089
+)
+
+2021-12-05 23:17:28,145 : 12-05-2021::23:17:28.145544
+f+1 identical responses received, result deduced                             (
+	request-id: 6617c5b5a5a512b01a6dcdb16a2329b79bd54db2, 
+	txn:(c2@localhost:8022:8023,12-05-2021::23:17:27.222055): Y5R4T7YJGH                             
+	result: 20c453793b9fc6500dade94a2511c39b3da5648db28c51e2b6a3feef73041284, 
+	timestamp: 12-05-2021::23:17:28.145492
+)
+
