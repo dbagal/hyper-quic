@@ -5,8 +5,7 @@ The major transport layer protocols in use today are TCP and UDP. Each of them h
 
 # Branches
 
-This project was done as part of CSE 534 course under Prof.   
-Aruna Balasubramanian. We did not find enough time to merge all the contributor's branches and hence we describe below what each branch contains:
+This project was done as part of CSE 534 course under Prof. Aruna Balasubramanian. We did not find enough time to merge all the contributor's branches and hence we describe below what each branch contains:
 - dbagal - This contains the code related to our humble effort of using raw sockets to remove dependency on any trasnsport layer protocol.
 - performanceMetrics - This contains a basic UDP client-server setup and also scripts to measure some performace metrics based on a packet capture file.
 - rohan - This contains other code related to our same humble effort. The code here is mainly related to encryption and Diffie-Hellman key exchange.
