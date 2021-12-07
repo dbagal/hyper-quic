@@ -1,4 +1,3 @@
-# hyper-quic
 # Hyper-QUIC!
 
 The major transport layer protocols in use today are TCP and UDP. Each of them have their own advantages and disadvantages. While many applications need the functionality of TCP, the overhead associated with it sometimes weighs down its benefits. On the other hand, UDP is a very lightweight protocol, but not at all reliable and secure. Moreover it doesn’t even have packet sequencing. It is a send and forget kind of protocol. Systems like State Machine Replication (SMR), Big data systems which need a lot of message passing need the features of TCP but have to compromise with the overhead associated with it. This gets worse when one TCP connection need to be used per message sent/received. Thus, we find a need for a new protocol which includes a blend of features from both TCP and UDP. We propose Hyper-QUIC which borrows some ideas from the popular QUIC protocol and make some enhancements that will meet these needs.
