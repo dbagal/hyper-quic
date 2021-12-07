@@ -1,0 +1,54 @@
+~# clear pending_votes and vote_msg_senders on new round
+BlockTree.pending_votes[vote_idx].add(vote_msg.signature)
+BlockTree.vote_msg_senders
+
+# sync up replicas before processing a proposal msg
+
+~# increase rounds in pacemkaer in round-robin fashion. add round-upper-bound in config
+
+~# introduce temporary buffer for mempool, so that transactions are not repeated in next blocks until original block gets committed
+
+~# all time related fields should be in seconds
+
+~# extra fields in config
+round_upper_bound
+commit_upper_bound
+
+~# start timer for a new round only if len of staging area is not 0
+
+
+
+TIMEOUT-MSG created
+--------------------
+ msg-type: TIMEOUT-MSG
+ id: e51a9a02c72cca9c0f4d897f50d8c70739fd86d581b36c1ff0c69dec0e5d5371
+ sender: r1@localhost:8000:8001
+ current-round: 2
+ high-qc: 838fce89e2afdde41e19eb65c03e1ab3430cfc7a205f302278f94b2a0dc995db
+ high-commit-qc: a1f3fba4ccccaa0c5f821bcfe3f69a5d19606b1b75c3e42754b239782f05a491
+ last-tc: None
+--------------------
+
+INFO:root:
+Local round timed out, timeout msg broadcasted (
+	timed-out-round: 2
+)
+
+INFO:root:
+TIMEOUT-MSG received from r2@localhost:8002:8003(
+--------------------
+ msg-type: TIMEOUT-MSG
+ id: 09db2fbc694fb3eef72998d9c711e19d8e279ad17ab693b33ab34c7dd3cbcbec
+ sender: r2@localhost:8002:8003
+ current-round: 3
+ high-qc: 1c47359790a1802a6bf67b569f24f52befa8db4ed045e834dfd4d33642c8f78b
+ high-commit-qc: 1c47359790a1802a6bf67b569f24f52befa8db4ed045e834dfd4d33642c8f78b
+ last-tc: None
+--------------------
+)
+
+INFO:root:
+Remote TimeoutMsg received (
+	from: r2@localhost:8002:8003,                        
+	timeout-for-round: 3
+)

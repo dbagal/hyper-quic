@@ -1,0 +1,10 @@
+{
+    "generator":{
+        "elect_faulty_leaders_only": false,
+        "allow_twins_in_same_partition": false,
+        "num_partition_sets": 2,
+        "num_rounds": 10,
+        "num_test_cases_upper_bound": 1000,
+        "enumeration_order": "deterministic"
+    }
+}
